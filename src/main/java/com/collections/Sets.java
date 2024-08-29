@@ -10,4 +10,13 @@ public class Sets {
             "tequila", "gin", "dry vermouth", "sweet vermouth", "prosecco","aperol", "brandy", "mezcal",
             "triple sec", "coffee liqueur", "almond liqueur", "champagne", "orange curacao", "rum"));
 
+    public static String checkDrinks(String drink, List<String> Ingredients) {
+        for (int i = 0; i< Ingredients.size(); i++) {
+            if( ALCOHOLS.contains(Ingredients.get(i))){
+                return drink + " Cocktail";
+            }
+        }
+        return drink + " Mocktail";
+    }
+
 }

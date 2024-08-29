@@ -34,8 +34,8 @@ public class ListsTest {
         List<String> colors1 = List.of("Red", "Green", "White", "Black", "Pink", "Yellow", "Black");
         List<String> colors2 = List.of("Red", "Green", "", "", "Pink", "", "Black");
 
-        assertEquals(-1, Lists.indexOfEmpty(colors1));
-        assertEquals(2, Lists.indexOfEmpty(colors2));
+        assertEquals(-1, Lists.IndexOfEmpty(colors1));
+        assertEquals(2, Lists.IndexOfEmpty(colors2));
     }
 
     // Tests for put
